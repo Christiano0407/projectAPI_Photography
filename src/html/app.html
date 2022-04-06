@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32"  href="/src/assets/photo.png">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -12,19 +13,96 @@
     <title>API Project Photography</title>
   </head>
   <body>
-    <header id="headerId" class="header">
-      <nav class="nav" id="navId">
-        <a href="/src/html/app.html" class="logo">
+    <!--Header and NavBar ===-->
+    <header class="header"  id="headerId">
+      <nav id="navId" class="navBar">
+        <a href="./app.html">
           <figure class="figureLogo">
-            <img
-              src="/src/assets/photo.png"
-              alt="logo_Image"
-              title="logo_Image"
-            />
+            <img src="/src/assets/photo.png" alt="logo" title="logoImg" />
           </figure>
         </a>
+
+        <!--Header Menu -->
+        <div id="menuId" class="menu">
+          <ul class="list" id="listId">
+            <li class="list-item">
+              <a href="#" class="list-link current">Home</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Categories</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Reviews</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">News</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Membership</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Contact</a>
+            </li>
+
+            <li class="list-item">
+              <a href="#" class="list-link screen-lg-hidden" id="screenLg">
+                Sign In
+              </a>
+            </li>
+
+            <li class="list-item">
+              <a href="#" class="list-link screen-lg-hidden" id="screenLg">
+                Sign In
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!--List  Right Light and Black-->
+        <div class="list list__right" id="listRight">
+          <button class="btn place__item--center" id="theme-toggle-btn">
+            <i class="fa-solid fa-sun sun__icon"></i>
+            <i class="fa-solid fa-moon moon__icon"></i>
+          </button>
+
+          <button class="btn place__item--center" id="searchIcon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+
+          <button
+            class="btn place__item--center screen-lg-hidden menu__toggle--icon"
+            id="menu-toggle-icon"
+          >
+            <i class="fa-solid fa-bars open__menu--icon"></i>
+            <i class="fa-solid fa-xmark close__menu--icon"></i>
+          </button>
+
+             <!--Btn Screen-->
+          <a href="#" id="screenSm" class="list-link screen-sm-hidden"
+            >Sign in</a
+          >
+          <a
+            href="#"
+            id="screenSm"
+            class="list-link screen-sm-hidden btn sign-up-btn fancy-border"
+            ><span>Sign up</span></a
+          >
+        </div>
+        </div>
       </nav>
     </header>
+
+    <!-- Search == -->
+    <section class="search__form--container  container" id="search-form-container">
+          <div class="form__container--inner">
+            <form action="" class="form">
+              <input type="text" class="form__input"  placeholder="What are you looking for">
+              <button class="btn form__btn" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+    </section>
     <!--Javascript-->
     <script src="/src/js/app.JS"></script>
   </body>

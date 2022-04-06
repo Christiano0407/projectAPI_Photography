@@ -1,0 +1,66 @@
+/**===  === ==== ========= Media Queries === ===== ==========  === */
+
+/**=== 480 px === */
+@media screen and (max-width: 480px) {
+}
+
+/**=== 768 px === */
+@media (min-width: 768px) {
+}
+/**=== 1200 px === */
+@media (min-width: 1200px) {
+}
+/**=== 1024 px === */
+@media (min-width: 1024px) {
+  #menuId {
+    position: static;
+    width: initial;
+    padding: initial;
+    background-color: transparent;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  #menuId > #listId {
+    flex-direction: row;
+  }
+
+  #listRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75%;
+  }
+  #screenLg {
+    display: none;
+  }
+  #screenSm {
+    display: block;
+  }
+  .sign-up-btn {
+    padding: 4rem;
+  }
+  #menu-toggle-icon {
+    display: none;
+  }
+}
+/**=== 1440 px === */
+@media (min-width: 1440px) {
+}
+/**=== 1920 px === */
+@media (min-width: 1920px) {
+}
+
+/**===  Orientation Screen  === */
+@media screen and (orientation: landscape) {
+  // Styles for landscape mode.
+  body::after {
+    content: "Landscape";
+  }
+}
+@media screen and (orientation: portrait) {
+  // Styles for portrait mode.
+  body::after {
+    content: "Portrait";
+  }
+}

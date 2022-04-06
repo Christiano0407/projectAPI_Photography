@@ -1,6 +1,7 @@
 //**==== Components =====**/
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
 @import url("/src/css/mediaQueries/mediaQueries.css");
+@import url("/src/css/component/component.css");
 
 //** ==== Root ==== */
 :root {
@@ -129,12 +130,51 @@ body.dark-theme {
 }
 
 //**  ======================== General Project  >>>>>>>>>>>>*/
+/** ====  Header JavaScript Styles ==== */
+.header.activated {
+  box-shadow: 0 1px 0.5rem rgba(255, 255, 255, 0.05);
+}
 .header {
-  outline: 3px solid red;
   width: 100%;
   position: fixed;
-  z-index: 999;
   top: 0;
   left: 0;
-  background-color: #131417;
+  z-index: 999;
+  background-color: #3c8dae;
+}
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu {
+  position: absolute;
+  top: 8.5rem;
+  right: 1.5rem;
+  width: 23rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: #3c8dae;
+
+  /*= menu=*/
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.25s ease-in-out;
+}
+.menu > .list {
+  flex-direction: column;
+}
+.list-item {
+  padding: 0.5rem;
+}
+.list-link {
+  font-size: 1.8rem;
+  color: #f2f2f2;
+  font-weight: 700;
+}
+.list-link:active {
+  transform: scale(0.9);
+}
+.list-link .current {
+  color: #afb6cd;
 }

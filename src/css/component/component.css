@@ -1,0 +1,31 @@
+/** === Components and Class === */
+.btn {
+  padding: 0 1.5rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 1.6rem;
+  color: #fff;
+  outline: none;
+}
+.btn:active {
+  transform: scale(0.9);
+}
+
+/** ====  Reusable classes  === */
+.container {
+  max-width: 160rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.place__item--center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.d-grid {
+  display: grid;
+}
+.screen-sm-hidden {
+  display: none;
+}
