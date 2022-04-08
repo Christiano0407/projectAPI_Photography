@@ -178,3 +178,17 @@ body.dark-theme {
 .list-link .current {
   color: #afb6cd;
 }
+/** == Work Javascrip ==t*/
+.close__menu--icon {
+  display: none;
+}
+.moon__icon {
+  display: none;
+}
+.light-theme .sun__icon {
+  display: none;
+}
+.light-theme .moon__icon {
+  display: block;
+}
+/**= =====  Javascript Work Header= =======*/
