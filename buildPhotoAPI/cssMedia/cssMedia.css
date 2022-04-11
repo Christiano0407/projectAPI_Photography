@@ -1,0 +1,38 @@
+/** ==== Media Queries ==== */
+@media (max-width: 380px) {
+  .search__form {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .input__control input {
+    width: 80%;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 570px) {
+  .header .nav .logo {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media (max-width: 630px) {
+  .search__form {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .search__form {
+    width: 60%;
+  }
+}
+@media (min-width: 950px) {
+  .search__form {
+    width: 50%;
+  }
+}
+@media (min-width: 1440px) {
+  .search__form {
+    width: 40%;
+  }
+}

@@ -4,9 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./stylePhoto.css" />
     <title>Build API Project Photography | Web Site Photography</title>
   </head>
   <body>
+    <header class="header" id="headerId">
+      <nav class="nav" id="navId">
+        <div class="logo" id="logoId">
+          <img
+            src="/projectAPI_Photography/src/assets/photo.png"
+            alt="logo-img"
+          />
+        </div>
+
+        <form action="" class="search__form">
+          <div class="input__control">
+            <input
+              type="text"
+              name="search"
+              class="search--input"
+              placeholder="Search for Anything "
+            />
+            <button type="submit" class="btn btn__submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </form>
+      </nav>
+    </header>
+
+    <main class="main" id="mainId"></main>
+
+    <div class="view">
+      <button class="view-more">View More &nbsp; &darr;</button>
+    </div>
     <!--  === Javascript Photography === -->
     <script src="../buildPhotoAPI/photoAPI.js"></script>
   </body>
